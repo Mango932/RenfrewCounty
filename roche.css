@@ -1,0 +1,275 @@
+* {
+    margin: 0px;
+    font-family: serif;
+    color: white;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+h2{
+    font-size: 120px;
+}
+p{
+    font-size: 18px;
+}
+
+/*=============
+     Header
+  ============*/
+
+.section-header{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/caves.jpg);
+    background-size: auto;
+    background-repeat: none;
+    background-position: center top;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media only screen and (min-width: 2048px){
+    .section-header{
+        background-size: 100vw;
+    }
+}
+.header{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.nav-links nav{
+    display: flex;
+}
+.links{
+    font-size: 20px;
+    margin: 0 45px;
+}
+.links::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: rgb(214,42,40);
+    display: block;
+    margin: auto;
+    transition-duration: 250ms;
+}
+.links:hover::after{
+    width:100%;
+}
+.text-box{
+    width: 100%;
+    text-align: center;
+    margin-top: 40vh;
+    pointer-events: none;
+}
+.title{
+    font-size: 80px;
+}
+.subtitle{
+    font-size: 24px;
+}
+
+
+/*==============
+     Menu icon
+  =============*/
+
+.checkbox{
+    position: absolute;
+    right: 25px;
+    top:25px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    display: none;
+    z-index: 2;
+}
+.checkbox:checked ~ .nav-links{
+    right: 0px;
+}
+.fa-bars{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 50px;
+    overflow-y: hidden;
+    color: white;
+    opacity: 0;
+    z-index: 1;
+}
+.checkbox:checked ~ .fa-bars{
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    .nav-links{
+        position: absolute;
+        right: -350px;
+        top: 0px;
+        width: 350px;
+        height: 100vh;
+        background: white;
+        padding-top: 100px;
+        transition-duration: 500ms;
+    }
+    .nav-links nav{
+        display: block;
+    }
+    .links{
+        display: block;
+        width: 100%;
+        margin: 0;
+        color: rgb(44, 44, 44);
+        padding: 20px 0;
+        font-size: 24px;
+        text-align: center;
+    }
+    .links:hover{
+        background: rgb(204, 204, 204);
+    }
+    .fa-bars{
+        opacity: 1;
+    }
+    .checkbox{
+        display: block;
+    }
+    .links::after{
+        display: none;
+    }
+}
+
+
+/*==================
+  text section
+  ==================*/
+
+.section-lti{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(images/sand.jpg);
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 15vh 10vw 15vh 10vw;
+}
+.text-con{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.text-con h2{
+    font-size: 80px;
+}
+.text-con p{
+    font-size: 24px;
+}
+
+
+/*==================
+  triplev section
+  ==================*/
+
+.triplev{
+    background:black;
+    color: white;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 10vh 0 10vh 0;
+}
+.triplev h1 {
+    font-size: 100px;
+    margin: 25px 25px 100px 25px;
+}
+.triplev h2 {
+    font-size: 50px;
+    margin: 25px;
+}
+.triplev p {
+    font-size: 18px;
+    margin: 25px;
+}
+.triplev-container{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.triplev-content{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.triplev-content-reverse{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.triplev-content-container{
+    max-width: 500px;
+    margin: 25px 5px 125px 5px;
+}
+.triplev-content-container img{
+    width:100%;
+}
+@media only screen and (max-width: 900px) {
+    .triplev{
+        padding: 5vh 0 5vh 0
+    }
+    .triplev-content{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .triplev-content-reverse{
+        flex-direction: column-reverse;
+    }
+    .triplev-content-container{
+        margin: 25px;
+        text-align: center;
+    }
+}
+
+/*==================
+  text-image section
+  ==================*/
+
+  .section-lti2{
+    background: black;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10vh 10vw 10vh 10vw;
+}
+.text-con2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.image-con2{
+    width: 40%;
+}
+.image-con2 img{
+    width: 450px;
+    margin: 10px;
+}
+.text-con2 h2{
+    font-size: 80px;
+}
+.text-con2 p{
+    font-size: 24px;
+}
