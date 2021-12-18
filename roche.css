@@ -150,7 +150,7 @@ p{
 .section-lti{
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(images/sand.jpg);
     width: 80%;
-    min-height: 70vh;
+    height: 700px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -246,7 +246,7 @@ p{
   .section-lti2{
     background: black;
     width: 80%;
-    min-height: 80vh;
+    height: 864px;
     margin: auto;
     display: flex;
     justify-content: space-between;
