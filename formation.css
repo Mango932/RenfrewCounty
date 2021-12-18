@@ -150,7 +150,6 @@ p{
 .section-lti{
     background: linear-gradient(to bottom,#332f22,#443D2F);
     max-width: 100%;
-    height: 70vh;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -159,10 +158,12 @@ p{
 }
 .text-con{
     width: 60%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+}
+.text-con h2{
+    margin-bottom: 50px;
+    font-size: 100px;
 }
 .image-con{
     width: 30%
